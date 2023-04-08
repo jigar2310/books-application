@@ -1,0 +1,38 @@
+{
+  "name": "react-google_books",
+  "version": "1.0.0",
+  "description": "A full-stack MERN app to search the Google Books API and keep a list of favorties for a given user.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/etorres-revature/React-Google_Books.git"
+  },
+  "keywords": [
+    "React",
+    "Google",
+    "Books",
+    "API"
+  ],
+  "author": "Eric D. Torres",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/etorres-revature/React-Google_Books/issues"
+  },
+  "homepage": "https://github.com/etorres-revature/React-Google_Books#readme",
+  "dependencies": {
+    "axios": "^0.21.0",
+    "compression": "^1.7.4",
+    "concurrently": "^5.3.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "if-env": "^1.0.4",
+    "mongoose": "^5.11.8",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.6"
+  }
+}
