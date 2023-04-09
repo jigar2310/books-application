@@ -1,0 +1,47 @@
+{
+  "name": "react-google_books",
+  "version": "1.0.0",
+  "description": "A full-stack MERN app to search the Google Books API and keep a list of favorties for a given user.",
+  "main": "index.js",
+  "scripts": {
+    "prebuild": "rimraf client/dist",
+    "build": "cd client && npm run build",
+    "ci-test": "cd client && npm run ci-test",
+    "client": "cd client && npm run dev",
+    "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
+    "server": "nodemon server.js",
+    "start": "node server.js",
+    "test": "cd client && npm run test",
+    "prod": "npm run build && npm start",
+    "pretty": "prettier --write \"./**/*.{js,jsx,json,css}\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/etorres-revature/React-Google_Books.git"
+  },
+  "keywords": [
+    "React",
+    "Google",
+    "Books",
+    "API"
+  ],
+  "author": "Eric D. Torres",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/etorres-revature/React-Google_Books/issues"
+  },
+  "homepage": "https://github.com/etorres-revature/React-Google_Books#readme",
+  "dependencies": {
+    "axios": "^0.21.0",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.11.8",
+    "morgan": "^1.10.0",
+    "prettier": "^2.8.7"
+  },
+  "devDependencies": {
+    "concurrently": "^7.0.0"
+  }
+}
