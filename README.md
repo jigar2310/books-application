@@ -38,5 +38,3 @@ For production environments...
 npm install --production
 NODE_ENV=production npm run prod
 ```
-
-s
