@@ -30,7 +30,7 @@ mongoose
     useCreateIndex: true,
   })
   .then(() => {
-    console.log("Database connected ");
+    console.log("MongoDB database connected");
   })
   .catch((error) => {
     console.log("Error while connecting mongo ::: ", error);
