@@ -7,7 +7,7 @@ const compression = require("compression");
 require("dotenv").config();
 
 const PORT = process.env.PORT || 3000;
-const mongodbUrl = process.env.MONGO_URL || "mongodb://localhost/reading-books";
+const mongodbUrl = process.env.MONGO_URL || "mongodb://localhost:27017/reading-books";
 const app = express();
 
 app.use(logger("dev"));
